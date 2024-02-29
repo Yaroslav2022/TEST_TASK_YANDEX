@@ -1,0 +1,257 @@
+@import url(/css/circle_runing_text.css);
+
+body {
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 500;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.container {
+    width: 1222px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0px 15px;
+}
+
+/* ===========================HEADER============================= */
+.logo {
+    position: absolute;
+    margin-top: 26px;
+    z-index: 1;
+    cursor: pointer;
+    z-index: 6;
+}
+
+/* ===========================CONTENT============================ */
+
+.main {
+    flex-grow: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.main__content__top {
+    height: 700px;
+    position: relative;
+    background-color: #E9DED4;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+
+.main__content__top__info__left {
+    min-width: 542px;
+}
+
+.main__content__top__right {}
+
+.main__content__top__background__layer1 {
+    background-image: url(/images/backgroud-layer.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: .2;
+    z-index: 2;
+}
+
+.main__content__top__background__layer2 {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    min-width: 1623.5px;
+    background-position: center center;
+}
+
+.main__content__top__background__horse {
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    right: 22.5%;
+    animation-name: figure;
+    -webkit-animation-name: figure;
+    -webkit-animation-duration: .7s;
+    animation-duration: .7s;
+}
+
+.main__content__top__background__pechka_figure {
+    position: absolute;
+    z-index: 5;
+    bottom: 17px;
+    right: -1%;
+    animation-name: figure;
+    -webkit-animation-name: figure;
+    -webkit-animation-duration: 1.1s;
+    animation-duration: 1.1s;
+}
+
+.main__content__top__background__king_figure {
+    position: absolute;
+    z-index: -1;
+    bottom: 75px;
+    left: 55px;
+    animation-name: figure;
+    -webkit-animation-name: figure;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+}
+
+.main__content__top__background__chess_figure {
+    position: absolute;
+    z-index: -1;
+    bottom: 180px;
+    right: 125px;
+    animation-name: figure;
+    -webkit-animation-name: figure;
+    -webkit-animation-duration: .8s;
+    animation-duration: .8s;
+}
+
+
+@keyframes figure {
+    0% {
+        transform: translateY(300px);
+        -webkit-transform: translateY(300px);
+        -moz-transform: translateY(300px);
+        -ms-transform: translateY(300px);
+        -o-transform: translateY(300px);
+    }
+}
+
+
+.main__content__top__info {
+    display: flex;
+    flex-direction: column;
+    max-width: 542px;
+    padding-top: 124px;
+    position: relative;
+    z-index: 5;
+}
+
+.main__content__top_title {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    color: #313131;
+    font-size: 60px;
+    line-height: 66px;
+    text-transform: uppercase;
+
+}
+
+.text_space--one {
+    margin-left: 85px;
+}
+
+.text_space--two {
+    margin-left: 30px;
+}
+
+.main__content__top__text {
+    margin-top: 24px;
+    color: #313131;
+    text-align: center;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+}
+
+.main__content__top__buttons {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    cursor: pointer;
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.main__content__top__button {
+    width: 263px;
+    height: 72px;
+    border: 2px solid #1F1F1F;
+    z-index: 10;
+    border-radius: 66px;
+    -webkit-border-radius: 66px;
+    -moz-border-radius: 66px;
+    -ms-border-radius: 66px;
+    padding: 0px 40px;
+    font-weight: 600;
+    cursor: pointer;
+    -o-border-radius: 66px;
+}
+
+
+.main__content__top__button--left {
+    background-color: #1F1F1F;
+    color: white;
+}
+
+.main__content__top__button--left:hover {
+    background-color: #FBCE51;
+    border: 2px solid #FBCE51;
+    color: #1F1F1F;
+}
+
+.main__content__top__button--right {
+    background-color: transparent;
+    color: #1F1F1F;
+    font-style: 16px;
+    line-height: 20px;
+    padding: 0px 50px;
+
+}
+
+.main__content__top__button--right:hover {
+    border: 2px solid #1F1F1F;
+    background-color: #1F1F1F;
+    color: white;
+}
+
+.marquee {
+    font-family: 'Merriweather', serif;
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #F54932;
+    overflow-x: hidden;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #FFF;
+
+}
+
+.track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 25s linear infinite;
+    -webkit-animation: marquee 25s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* ===========================FOOTER============================= */
+
+.footer {
+    flex-shrink: 0;
+}
+
+
+@media (min-width: 1920px) {}
