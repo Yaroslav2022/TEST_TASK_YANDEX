@@ -1,0 +1,969 @@
+  /* <main class="main"><section class="main__content__top"><div class="main__content__top__background__layer1"></div><div class="container"><div class="circle"><img class="main__content__top__background__king_figure" src="/images/kong_figure.png" alt=""><img class="main__content__top__background__chess_figure" src="/images/chess_figure.png" alt=""><div class="text"><p>И</p><p>З</p><p>В</p><p>А</p><p>С</p><p>Ю</p><p>К</p><p>О</p><p>В</p><p>П</p><p>О</p><p>Л</p><p>Е</p><p>Т</p><p>Я</p><p>Т</p><p>С</p><p>И</p><p>Г</p><p>Н</p><p>А</p><p>Л</p><p>Ы</p><p>Н</p><p>А</p><p>М</p><p>А</p><p>Р</p><p>С</p><p>•</p>< !--==================================--><p>И</p><p>З</p><p>В</p><p>А</p><p>С</p><p>Ю</p><p>К</p><p>О</p><p>В</p><p>П</p><p>О</p><p>Л</p><p>Е</p><p>Т</p><p>Я</p><p>Т</p><p>С</p><p>И</p><p>Г</p><p>Н</p><p>А</p><p>Л</p><p>Ы</p><p>Н</p><p>А</p><p>М</p><p>А</p><p>Р</p><p>С</p><p>•</p>< !--==================================--><p>И</p><p>З</p><p>В</p><p>А</p><p>С</p><p>Ю</p><p>К</p><p>О</p><p>В</p><p>П</p><p>О</p><p>Л</p><p>Е</p><p>Т</p><p>Я</p><p>Т</p><p>С</p><p>И</p><p>Г</p><p>Н</p><p>А</p><p>Л</p><p>Ы</p><p>Н</p><p>А</p><p>М</p><p>А</p><p>Р</p><p>С</p><p>•</p>< !--==================================--><p>И</p><p>З</p><p>В</p><p>А</p><p>С</p><p>Ю</p><p>К</p><p>О</p><p>В</p><p>П</p><p>О</p><p>Л</p><p>Е</p><p>Т</p><p>Я</p><p>Т</p><p>С</p><p>И</p><p>Г</p><p>Н</p><p>А</p><p>Л</p><p>Ы</p><p>Н</p><p>А</p><p>М</p><p>А</p><p>Р</p><p>С</p><p>•</p>< !--==================================--><p>И</p><p>З</p><p>В</p><p>А</p><p>С</p><p>Ю</p><p>К</p><p>О</p><p>В</p><p>П</p><p>О</p><p>Л</p><p>Е</p><p>Т</p><p>Я</p><p>Т</p><p>С</p><p>И</p><p>Г</p><p>Н</p><p>А</p><p>Л</p><p>Ы</p><p>Н</p><p>А</p><p>М</p><p>А</p><p>Р</p><p>С</p><p>•</p></div></div><div class="main__content__top__info__left"><header class="header"><div class="logo"><a href="#"><img src="/images/logo.png" alt="The Four Horses Club"></a></div></header><div class="main__content__top__info"><h1 class="main__content__top_title">Превратите уездный город <span class="text_space--one">в столицу</span><span class="text_space--two">земного шара</span></h1><p class="main__content__top__text">Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам </p><div class="main__content__top__buttons"><button type="button"
+  class="main__content__top__button main__content__top__button--left">Поддержать шахматную мысль </button><button type="button"
+  class="main__content__top__button main__content__top__button--right">Подробнее о турнире </button></div></div></div></div><img class="main__content__top__background__layer2" src="/images/city.png" alt="#"><div class="container"><div class="main__content__top__right"><img class="main__content__top__background__horse " src="/images/horse.png" alt=""><img class="main__content__top__background__pechka_figure" src="/images/pechka_figure.png"
+  alt=""></img></div></div></section><div class="marquee"><p class="track">Дело помощи утопающим — дело рук самих утопающих !&nbsp&nbsp•&nbsp&nbsp Шахматы двигают вперед не только культуру,
+  но и экономику !&nbsp&nbsp•&nbsp&nbsp Лед тронулся,
+  господа присяжные заседатели !&nbsp&nbsp•&nbsp&nbsp Дело помощи утопающим — дело рук самих утопающих !&nbsp&nbsp•&nbsp&nbsp Шахматы двигают вперед не только культуру,
+  но и экономику !&nbsp&nbsp•&nbsp&nbsp Лед тронулся,
+  господа присяжные заседатели !&nbsp&nbsp•&nbsp&nbsp </p></div></main> */
+  .text-circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      white-space: nowrap;
+      height: 100%;
+      border-radius: 50%;
+      animation: circle-text-animation 100s infinite linear;
+      -webkit-animation: circle-text-animation 100s infinite linear;
+  }
+
+  @keyframes circle-text-animation {
+      0% {
+          transform: translate(-50%, -50%) rotate(0deg);
+      }
+
+      100% {
+          transform: translate(-50%, -50%) rotate(360deg);
+      }
+  }
+
+  .circle {
+      position: relative;
+      float: right;
+      z-index: 1;
+      width: 660px;
+      top: -50px;
+      left: 0px;
+      overflow: hidden;
+      height: 660px;
+      border-radius: 50%;
+      background-color: #ffc014;
+      position: relative;
+      overflow: hidden;
+  }
+
+  .text-circle p {
+      font-family: 'Merriweather', serif;
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 10px;
+      color: #ff8000;
+      z-index: 10;
+  }
+
+  .text-circle p:nth-of-type(-n+150) {
+      bottom: 50%;
+      -ms-transform-origin: 0% 100%;
+      -webkit-transform-origin: 0% 100%;
+      transform-origin: 0% 100%;
+      padding-bottom: 50%;
+  }
+
+
+
+  .text-circle p:nth-of-type(1) {
+      -ms-transform: rotate(348.3deg);
+      -webkit-transform: rotate(348.3deg);
+      transform: rotate(348.3deg);
+  }
+
+  .text-circle p:nth-of-type(2) {
+      -ms-transform: rotate(350.5deg);
+      -webkit-transform: rotate(350.5deg);
+      transform: rotate(350.5deg);
+  }
+
+  .text-circle p:nth-of-type(3) {
+      -ms-transform: rotate(353deg);
+      -webkit-transform: rotate(353deg);
+      transform: rotate(353deg);
+  }
+
+  .text-circle p:nth-of-type(4) {
+      -ms-transform: rotate(355deg);
+      -webkit-transform: rotate(355deg);
+      transform: rotate(355deg);
+  }
+
+  .text-circle p:nth-of-type(5) {
+      -ms-transform: rotate(357deg);
+      -webkit-transform: rotate(357deg);
+      transform: rotate(357deg);
+  }
+
+  .text-circle p:nth-of-type(6) {
+      -ms-transform: rotate(359deg);
+      -webkit-transform: rotate(359deg);
+      transform: rotate(359deg);
+
+  }
+
+  .text-circle p:nth-of-type(7) {
+      -ms-transform: rotate(2deg);
+      -webkit-transform: rotate(2deg);
+      transform: rotate(2deg);
+  }
+
+  .text-circle p:nth-of-type(8) {
+      -ms-transform: rotate(3.7deg);
+      -webkit-transform: rotate(3.7deg);
+      transform: rotate(3.7deg);
+  }
+
+  .text-circle p:nth-of-type(9) {
+      -ms-transform: rotate(6deg);
+      -webkit-transform: rotate(6deg);
+      transform: rotate(6deg);
+  }
+
+  .text-circle p:nth-of-type(10) {
+      -ms-transform: rotate(8.5deg);
+      -webkit-transform: rotate(8.5deg);
+      transform: rotate(8.5deg);
+  }
+
+  .text-circle p:nth-of-type(11) {
+      -ms-transform: rotate(10.5deg);
+      -webkit-transform: rotate(10.5deg);
+      transform: rotate(10.5deg);
+  }
+
+
+  .text-circle p:nth-of-type(12) {
+      -ms-transform: rotate(12.5deg);
+      -webkit-transform: rotate(12.5deg);
+      transform: rotate(12.5deg);
+  }
+
+  .text-circle p:nth-of-type(13) {
+      -ms-transform: rotate(14.5deg);
+      -webkit-transform: rotate(14.5deg);
+      transform: rotate(14.5deg);
+  }
+
+  .text-circle p:nth-of-type(14) {
+      -ms-transform: rotate(16.5deg);
+      -webkit-transform: rotate(16.5deg);
+      transform: rotate(16.5deg);
+  }
+
+  .text-circle p:nth-of-type(15) {
+      -ms-transform: rotate(18.5deg);
+      -webkit-transform: rotate(18.5deg);
+      transform: rotate(18.5deg);
+  }
+
+  .text-circle p:nth-of-type(16) {
+      -ms-transform: rotate(20.5deg);
+      -webkit-transform: rotate(20.5deg);
+      transform: rotate(20.5deg);
+  }
+
+  .text-circle p:nth-of-type(17) {
+      -ms-transform: rotate(23deg);
+      -webkit-transform: rotate(23deg);
+      transform: rotate(23deg);
+  }
+
+  .text-circle p:nth-of-type(18) {
+      -ms-transform: rotate(25.2deg);
+      -webkit-transform: rotate(25.2deg);
+      transform: rotate(25.2deg);
+  }
+
+  .text-circle p:nth-of-type(19) {
+      -ms-transform: rotate(27.3deg);
+      -webkit-transform: rotate(27.3deg);
+      transform: rotate(27.3deg);
+  }
+
+  .text-circle p:nth-of-type(20) {
+      -ms-transform: rotate(29deg);
+      -webkit-transform: rotate(29deg);
+      transform: rotate(29deg);
+  }
+
+  .text-circle p:nth-of-type(21) {
+      -ms-transform: rotate(31.2deg);
+      -webkit-transform: rotate(31.2deg);
+      transform: rotate(31.2deg);
+  }
+
+  .text-circle p:nth-of-type(22) {
+      -ms-transform: rotate(33.3deg);
+      -webkit-transform: rotate(33.3deg);
+      transform: rotate(33.3deg);
+  }
+
+  .text-circle p:nth-of-type(23) {
+      -ms-transform: rotate(35.3deg);
+      -webkit-transform: rotate(35.3deg);
+      transform: rotate(35.3deg);
+  }
+
+  .text-circle p:nth-of-type(24) {
+      -ms-transform: rotate(38.5deg);
+      -webkit-transform: rotate(38.5deg);
+      transform: rotate(38.5deg);
+  }
+
+  .text-circle p:nth-of-type(25) {
+      -ms-transform: rotate(40.8deg);
+      -webkit-transform: rotate(40.8deg);
+      transform: rotate(40.8deg);
+  }
+
+  .text-circle p:nth-of-type(26) {
+      -ms-transform: rotate(43.4deg);
+      -webkit-transform: rotate(43.4deg);
+      transform: rotate(43.4deg);
+  }
+
+  .text-circle p:nth-of-type(27) {
+      -ms-transform: rotate(46deg);
+      -webkit-transform: rotate(46deg);
+      transform: rotate(46deg);
+  }
+
+  .text-circle p:nth-of-type(28) {
+      -ms-transform: rotate(48deg);
+      -webkit-transform: rotate(48deg);
+      transform: rotate(48deg);
+  }
+
+  .text-circle p:nth-of-type(29) {
+      -ms-transform: rotate(50deg);
+      -webkit-transform: rotate(50deg);
+      transform: rotate(50deg);
+  }
+
+  .text-circle p:nth-of-type(30) {
+      -ms-transform: rotate(52.5deg);
+      -webkit-transform: rotate(52.5deg);
+      transform: rotate(52.5deg);
+  }
+
+  .text-circle p:nth-of-type(31) {
+      -ms-transform: rotate(54deg);
+      -webkit-transform: rotate(54deg);
+      transform: rotate(54deg);
+  }
+
+  .text-circle p:nth-of-type(32) {
+      -ms-transform: rotate(56.2deg);
+      -webkit-transform: rotate(56.2deg);
+      transform: rotate(56.2deg);
+  }
+
+  .text-circle p:nth-of-type(33) {
+      -ms-transform: rotate(59deg);
+      -webkit-transform: rotate(59deg);
+      transform: rotate(59deg);
+  }
+
+  .text-circle p:nth-of-type(34) {
+      -ms-transform: rotate(61deg);
+      -webkit-transform: rotate(61deg);
+      transform: rotate(61deg);
+  }
+
+  .text-circle p:nth-of-type(35) {
+      -ms-transform: rotate(63deg);
+      -webkit-transform: rotate(63deg);
+      transform: rotate(63deg);
+  }
+
+  .text-circle p:nth-of-type(36) {
+      -ms-transform: rotate(65deg);
+      -webkit-transform: rotate(65deg);
+      transform: rotate(65deg);
+  }
+
+  .text-circle p:nth-of-type(37) {
+      -ms-transform: rotate(68deg);
+      -webkit-transform: rotate(68deg);
+      transform: rotate(68deg);
+  }
+
+  .text-circle p:nth-of-type(38) {
+      -ms-transform: rotate(69.7deg);
+      -webkit-transform: rotate(69.7deg);
+      transform: rotate(69.7deg);
+  }
+
+  .text-circle p:nth-of-type(39) {
+      -ms-transform: rotate(72deg);
+      -webkit-transform: rotate(72deg);
+      transform: rotate(72deg);
+  }
+
+  .text-circle p:nth-of-type(40) {
+      -ms-transform: rotate(74.5deg);
+      -webkit-transform: rotate(74.5deg);
+      transform: rotate(74.5deg);
+  }
+
+  .text-circle p:nth-of-type(41) {
+      -ms-transform: rotate(76.7deg);
+      -webkit-transform: rotate(76.7deg);
+      transform: rotate(76.7deg);
+  }
+
+  .text-circle p:nth-of-type(42) {
+      -ms-transform: rotate(79deg);
+      -webkit-transform: rotate(79deg);
+      transform: rotate(79deg);
+  }
+
+  .text-circle p:nth-of-type(43) {
+      -ms-transform: rotate(81deg);
+      -webkit-transform: rotate(81deg);
+      transform: rotate(81deg);
+  }
+
+  .text-circle p:nth-of-type(44) {
+      -ms-transform: rotate(83deg);
+      -webkit-transform: rotate(83deg);
+      transform: rotate(83deg);
+  }
+
+  .text-circle p:nth-of-type(45) {
+      -ms-transform: rotate(85deg);
+      -webkit-transform: rotate(85deg);
+      transform: rotate(85deg);
+  }
+
+  .text-circle p:nth-of-type(46) {
+      -ms-transform: rotate(87deg);
+      -webkit-transform: rotate(87deg);
+      transform: rotate(87deg);
+  }
+
+  .text-circle p:nth-of-type(47) {
+      -ms-transform: rotate(89.5deg);
+      -webkit-transform: rotate(89.5deg);
+      transform: rotate(89.5deg);
+  }
+
+  .text-circle p:nth-of-type(48) {
+      -ms-transform: rotate(91.7deg);
+      -webkit-transform: rotate(91.7deg);
+      transform: rotate(91.7deg);
+  }
+
+  .text-circle p:nth-of-type(49) {
+      -ms-transform: rotate(93.9deg);
+      -webkit-transform: rotate(93.9deg);
+      transform: rotate(93.9deg);
+  }
+
+  .text-circle p:nth-of-type(50) {
+      -ms-transform: rotate(95.8deg);
+      -webkit-transform: rotate(95.8deg);
+      transform: rotate(95.8deg);
+  }
+
+  .text-circle p:nth-of-type(51) {
+      -ms-transform: rotate(98deg);
+      -webkit-transform: rotate(98deg);
+      transform: rotate(98deg);
+  }
+
+  .text-circle p:nth-of-type(52) {
+      -ms-transform: rotate(100.2deg);
+      -webkit-transform: rotate(100.2deg);
+      transform: rotate(100.2deg);
+  }
+
+  .text-circle p:nth-of-type(53) {
+      -ms-transform: rotate(102.2deg);
+      -webkit-transform: rotate(102.2deg);
+      transform: rotate(102.2deg);
+  }
+
+  .text-circle p:nth-of-type(54) {
+      -ms-transform: rotate(105.5deg);
+      -webkit-transform: rotate(105.5deg);
+      transform: rotate(105.5deg);
+  }
+
+  .text-circle p:nth-of-type(55) {
+      -ms-transform: rotate(107.9deg);
+      -webkit-transform: rotate(107.9deg);
+      transform: rotate(107.9deg);
+  }
+
+  .text-circle p:nth-of-type(56) {
+      -ms-transform: rotate(111deg);
+      -webkit-transform: rotate(111deg);
+      transform: rotate(111deg);
+  }
+
+  .text-circle p:nth-of-type(57) {
+      -ms-transform: rotate(113.7deg);
+      -webkit-transform: rotate(113.7deg);
+      transform: rotate(113.7deg);
+  }
+
+  .text-circle p:nth-of-type(58) {
+      -ms-transform: rotate(115.8deg);
+      -webkit-transform: rotate(115.8deg);
+      transform: rotate(115.8deg);
+  }
+
+  .text-circle p:nth-of-type(59) {
+      -ms-transform: rotate(117.8deg);
+      -webkit-transform: rotate(117.8deg);
+      transform: rotate(117.8deg);
+  }
+
+  .text-circle p:nth-of-type(60) {
+      -ms-transform: rotate(120.5deg);
+      -webkit-transform: rotate(120.5deg);
+      transform: rotate(120.5deg);
+  }
+
+  .text-circle p:nth-of-type(61) {
+      -ms-transform: rotate(122deg);
+      -webkit-transform: rotate(122deg);
+      transform: rotate(122deg);
+  }
+
+  .text-circle p:nth-of-type(62) {
+      -ms-transform: rotate(124.5deg);
+      -webkit-transform: rotate(124.5deg);
+      transform: rotate(124.5deg);
+  }
+
+  .text-circle p:nth-of-type(63) {
+      -ms-transform: rotate(127.2deg);
+      -webkit-transform: rotate(127.2deg);
+      transform: rotate(127.2deg);
+  }
+
+  .text-circle p:nth-of-type(64) {
+      -ms-transform: rotate(129.3deg);
+      -webkit-transform: rotate(129.3deg);
+      transform: rotate(129.3deg);
+  }
+
+  .text-circle p:nth-of-type(65) {
+      -ms-transform: rotate(131.5deg);
+      -webkit-transform: rotate(131.5deg);
+      transform: rotate(131.5deg);
+  }
+
+  .text-circle p:nth-of-type(66) {
+      -ms-transform: rotate(133.7deg);
+      -webkit-transform: rotate(133.7deg);
+      transform: rotate(133.7deg);
+  }
+
+  .text-circle p:nth-of-type(67) {
+      -ms-transform: rotate(136.8deg);
+      -webkit-transform: rotate(136.8deg);
+      transform: rotate(136.8deg);
+  }
+
+  .text-circle p:nth-of-type(68) {
+      -ms-transform: rotate(138.7deg);
+      -webkit-transform: rotate(138.7deg);
+      transform: rotate(138.7deg);
+  }
+
+  .text-circle p:nth-of-type(69) {
+      -ms-transform: rotate(141deg);
+      -webkit-transform: rotate(141deg);
+      transform: rotate(141deg);
+  }
+
+  .text-circle p:nth-of-type(70) {
+      -ms-transform: rotate(143.8deg);
+      -webkit-transform: rotate(143.8deg);
+      transform: rotate(143.8deg);
+  }
+
+  .text-circle p:nth-of-type(71) {
+      -ms-transform: rotate(146deg);
+      -webkit-transform: rotate(146deg);
+      transform: rotate(146deg);
+  }
+
+  .text-circle p:nth-of-type(72) {
+      -ms-transform: rotate(148.6deg);
+      -webkit-transform: rotate(148.6deg);
+      transform: rotate(148.6deg);
+  }
+
+  .text-circle p:nth-of-type(73) {
+      -ms-transform: rotate(150.6deg);
+      -webkit-transform: rotate(150.6deg);
+      transform: rotate(150.6deg);
+  }
+
+  .text-circle p:nth-of-type(74) {
+      -ms-transform: rotate(152.6deg);
+      -webkit-transform: rotate(152.6deg);
+      transform: rotate(152.6deg);
+  }
+
+  .text-circle p:nth-of-type(75) {
+      -ms-transform: rotate(154.5deg);
+      -webkit-transform: rotate(154.5deg);
+      transform: rotate(154.5deg);
+  }
+
+  .text-circle p:nth-of-type(76) {
+      -ms-transform: rotate(156.8deg);
+      -webkit-transform: rotate(156.8deg);
+      transform: rotate(156.8deg);
+  }
+
+  .text-circle p:nth-of-type(77) {
+      -ms-transform: rotate(159.5deg);
+      -webkit-transform: rotate(159.5deg);
+      transform: rotate(159.5deg);
+  }
+
+  .text-circle p:nth-of-type(78) {
+      -ms-transform: rotate(161.7deg);
+      -webkit-transform: rotate(161.7deg);
+      transform: rotate(161.7deg);
+  }
+
+  .text-circle p:nth-of-type(79) {
+      -ms-transform: rotate(164deg);
+      -webkit-transform: rotate(164deg);
+      transform: rotate(164deg);
+  }
+
+  .text-circle p:nth-of-type(80) {
+      -ms-transform: rotate(165.8deg);
+      -webkit-transform: rotate(165.8deg);
+      transform: rotate(165.8deg);
+  }
+
+  .text-circle p:nth-of-type(81) {
+      -ms-transform: rotate(168.2deg);
+      -webkit-transform: rotate(168.2deg);
+      transform: rotate(168.2deg);
+  }
+
+  .text-circle p:nth-of-type(82) {
+      -ms-transform: rotate(170.5deg);
+      -webkit-transform: rotate(170.5deg);
+      transform: rotate(170.5deg);
+  }
+
+  .text-circle p:nth-of-type(83) {
+      -ms-transform: rotate(172.5deg);
+      -webkit-transform: rotate(172.5deg);
+      transform: rotate(172.5deg);
+  }
+
+  .text-circle p:nth-of-type(84) {
+      -ms-transform: rotate(176deg);
+      -webkit-transform: rotate(176deg);
+      transform: rotate(176deg);
+  }
+
+  .text-circle p:nth-of-type(85) {
+      -ms-transform: rotate(178.5deg);
+      -webkit-transform: rotate(178.5deg);
+      transform: rotate(178.5deg);
+  }
+
+  .text-circle p:nth-of-type(86) {
+      -ms-transform: rotate(181.5deg);
+      -webkit-transform: rotate(181.5deg);
+      transform: rotate(181.5deg);
+  }
+
+  .text-circle p:nth-of-type(87) {
+      -ms-transform: rotate(184.3deg);
+      -webkit-transform: rotate(184.3deg);
+      transform: rotate(184.3deg);
+  }
+
+  .text-circle p:nth-of-type(88) {
+      -ms-transform: rotate(186.5deg);
+      -webkit-transform: rotate(186.5deg);
+      transform: rotate(186.5deg);
+  }
+
+  .text-circle p:nth-of-type(89) {
+      -ms-transform: rotate(188.5deg);
+      -webkit-transform: rotate(188.5deg);
+      transform: rotate(188.5deg);
+  }
+
+  .text-circle p:nth-of-type(90) {
+      -ms-transform: rotate(191.5deg);
+      -webkit-transform: rotate(191.5deg);
+      transform: rotate(191.5deg);
+  }
+
+
+  .text-circle p:nth-of-type(91) {
+      -ms-transform: rotate(193.5deg);
+      -webkit-transform: rotate(193.5deg);
+      transform: rotate(193.5deg);
+  }
+
+
+  .text-circle p:nth-of-type(92) {
+      -ms-transform: rotate(195.9deg);
+      -webkit-transform: rotate(195.9deg);
+      transform: rotate(195.9deg);
+  }
+
+  .text-circle p:nth-of-type(93) {
+      -ms-transform: rotate(198.5deg);
+      -webkit-transform: rotate(198.5deg);
+      transform: rotate(198.5deg);
+  }
+
+  .text-circle p:nth-of-type(94) {
+      -ms-transform: rotate(200.7deg);
+      -webkit-transform: rotate(200.7deg);
+      transform: rotate(200.7deg);
+  }
+
+  .text-circle p:nth-of-type(95) {
+      -ms-transform: rotate(203deg);
+      -webkit-transform: rotate(203deg);
+      transform: rotate(203deg);
+  }
+
+  .text-circle p:nth-of-type(96) {
+      -ms-transform: rotate(205deg);
+      -webkit-transform: rotate(205deg);
+      transform: rotate(205deg);
+  }
+
+  .text-circle p:nth-of-type(97) {
+      -ms-transform: rotate(208.2deg);
+      -webkit-transform: rotate(208.2deg);
+      transform: rotate(208.2deg);
+  }
+
+  .text-circle p:nth-of-type(98) {
+      -ms-transform: rotate(210.2deg);
+      -webkit-transform: rotate(210.2deg);
+      transform: rotate(210.2deg);
+  }
+
+  .text-circle p:nth-of-type(99) {
+      -ms-transform: rotate(212.5deg);
+      -webkit-transform: rotate(212.5deg);
+      transform: rotate(212.5deg);
+  }
+
+  .text-circle p:nth-of-type(100) {
+      -ms-transform: rotate(215.5deg);
+      -webkit-transform: rotate(215.5deg);
+      transform: rotate(215.5deg);
+  }
+
+  .text-circle p:nth-of-type(101) {
+      -ms-transform: rotate(217.8deg);
+      -webkit-transform: rotate(217.8deg);
+      transform: rotate(217.8deg);
+  }
+
+  .text-circle p:nth-of-type(102) {
+      -ms-transform: rotate(220.2deg);
+      -webkit-transform: rotate(220.2deg);
+      transform: rotate(220.2deg);
+  }
+
+  .text-circle p:nth-of-type(103) {
+      -ms-transform: rotate(222.5deg);
+      -webkit-transform: rotate(222.5deg);
+      transform: rotate(222.5deg);
+  }
+
+  .text-circle p:nth-of-type(104) {
+      -ms-transform: rotate(224.5deg);
+      -webkit-transform: rotate(224.5deg);
+      transform: rotate(224.5deg);
+  }
+
+  .text-circle p:nth-of-type(105) {
+      -ms-transform: rotate(226.4deg);
+      -webkit-transform: rotate(226.4deg);
+      transform: rotate(226.4deg);
+  }
+
+  .text-circle p:nth-of-type(106) {
+      -ms-transform: rotate(228.4deg);
+      -webkit-transform: rotate(228.4deg);
+      transform: rotate(228.4deg);
+  }
+
+  .text-circle p:nth-of-type(107) {
+      -ms-transform: rotate(231.5deg);
+      -webkit-transform: rotate(231.5deg);
+      transform: rotate(231.5deg);
+  }
+
+  .text-circle p:nth-of-type(108) {
+      -ms-transform: rotate(233.5deg);
+      -webkit-transform: rotate(233.5deg);
+      transform: rotate(233.5deg);
+  }
+
+  .text-circle p:nth-of-type(109) {
+      -ms-transform: rotate(235.8deg);
+      -webkit-transform: rotate(235.8deg);
+      transform: rotate(235.8deg);
+  }
+
+  .text-circle p:nth-of-type(110) {
+      -ms-transform: rotate(237.5deg);
+      -webkit-transform: rotate(237.5deg);
+      transform: rotate(237.5deg);
+  }
+
+  .text-circle p:nth-of-type(111) {
+      -ms-transform: rotate(240deg);
+      -webkit-transform: rotate(240deg);
+      transform: rotate(240deg);
+  }
+
+  .text-circle p:nth-of-type(112) {
+      -ms-transform: rotate(242.5deg);
+      -webkit-transform: rotate(242.5deg);
+      transform: rotate(242.5deg);
+  }
+
+  .text-circle p:nth-of-type(113) {
+      -ms-transform: rotate(244.8deg);
+      -webkit-transform: rotate(244.8deg);
+      transform: rotate(244.8deg);
+  }
+
+  .text-circle p:nth-of-type(114) {
+      -ms-transform: rotate(248.5deg);
+      -webkit-transform: rotate(248.5deg);
+      transform: rotate(248.5deg);
+  }
+
+  .text-circle p:nth-of-type(115) {
+      -ms-transform: rotate(250.8deg);
+      -webkit-transform: rotate(250.8deg);
+      transform: rotate(250.8deg);
+  }
+
+  .text-circle p:nth-of-type(116) {
+      -ms-transform: rotate(254deg);
+      -webkit-transform: rotate(254deg);
+      transform: rotate(254deg);
+  }
+
+  .text-circle p:nth-of-type(117) {
+      -ms-transform: rotate(257deg);
+      -webkit-transform: rotate(257deg);
+      transform: rotate(257deg);
+  }
+
+  .text-circle p:nth-of-type(118) {
+      -ms-transform: rotate(259.5deg);
+      -webkit-transform: rotate(259.5deg);
+      transform: rotate(259.5deg);
+  }
+
+  .text-circle p:nth-of-type(119) {
+      -ms-transform: rotate(261.5deg);
+      -webkit-transform: rotate(261.5deg);
+      transform: rotate(261.5deg);
+  }
+
+  .text-circle p:nth-of-type(120) {
+      -ms-transform: rotate(264deg);
+      -webkit-transform: rotate(264deg);
+      transform: rotate(264deg);
+  }
+
+  .text-circle p:nth-of-type(121) {
+      -ms-transform: rotate(265.5deg);
+      -webkit-transform: rotate(265.5deg);
+      transform: rotate(265.5deg);
+  }
+
+  .text-circle p:nth-of-type(122) {
+      -ms-transform: rotate(267.8deg);
+      -webkit-transform: rotate(267.8deg);
+      transform: rotate(267.8deg);
+  }
+
+  .text-circle p:nth-of-type(123) {
+      -ms-transform: rotate(270.4deg);
+      -webkit-transform: rotate(270.4deg);
+      transform: rotate(270.4deg);
+  }
+
+  .text-circle p:nth-of-type(124) {
+      -ms-transform: rotate(272.6deg);
+      -webkit-transform: rotate(272.6deg);
+      transform: rotate(272.6deg);
+  }
+
+  .text-circle p:nth-of-type(125) {
+      -ms-transform: rotate(274.9deg);
+      -webkit-transform: rotate(274.9deg);
+      transform: rotate(274.9deg);
+  }
+
+  .text-circle p:nth-of-type(126) {
+      -ms-transform: rotate(277deg);
+      -webkit-transform: rotate(277deg);
+      transform: rotate(277deg);
+  }
+
+  .text-circle p:nth-of-type(127) {
+      -ms-transform: rotate(280deg);
+      -webkit-transform: rotate(280deg);
+      transform: rotate(280deg);
+  }
+
+  .text-circle p:nth-of-type(128) {
+      -ms-transform: rotate(282deg);
+      -webkit-transform: rotate(282deg);
+      transform: rotate(282deg);
+  }
+
+  .text-circle p:nth-of-type(129) {
+      -ms-transform: rotate(284.3deg);
+      -webkit-transform: rotate(284.3deg);
+      transform: rotate(284.3deg);
+  }
+
+  .text-circle p:nth-of-type(130) {
+      -ms-transform: rotate(287.5deg);
+      -webkit-transform: rotate(287.5deg);
+      transform: rotate(287.5deg);
+  }
+
+  .text-circle p:nth-of-type(131) {
+      -ms-transform: rotate(289.7deg);
+      -webkit-transform: rotate(289.7deg);
+      transform: rotate(289.7deg);
+  }
+
+  .text-circle p:nth-of-type(132) {
+      -ms-transform: rotate(292deg);
+      -webkit-transform: rotate(292deg);
+      transform: rotate(292deg);
+  }
+
+  .text-circle p:nth-of-type(133) {
+      -ms-transform: rotate(294.2deg);
+      -webkit-transform: rotate(294.2deg);
+      transform: rotate(294.2deg);
+  }
+
+  .text-circle p:nth-of-type(134) {
+      -ms-transform: rotate(296.2deg);
+      -webkit-transform: rotate(296.2deg);
+      transform: rotate(296.2deg);
+  }
+
+  .text-circle p:nth-of-type(135) {
+      -ms-transform: rotate(298.2deg);
+      -webkit-transform: rotate(298.2deg);
+      transform: rotate(298.2deg);
+  }
+
+  .text-circle p:nth-of-type(136) {
+      -ms-transform: rotate(300.4deg);
+      -webkit-transform: rotate(300.4deg);
+      transform: rotate(300.4deg);
+  }
+
+  .text-circle p:nth-of-type(137) {
+      -ms-transform: rotate(303.5deg);
+      -webkit-transform: rotate(303.5deg);
+      transform: rotate(303.5deg);
+  }
+
+  .text-circle p:nth-of-type(138) {
+      -ms-transform: rotate(305.7deg);
+      -webkit-transform: rotate(305.7deg);
+      transform: rotate(305.7deg);
+  }
+
+  .text-circle p:nth-of-type(139) {
+      -ms-transform: rotate(308deg);
+      -webkit-transform: rotate(308deg);
+      transform: rotate(308deg);
+  }
+
+  .text-circle p:nth-of-type(140) {
+      -ms-transform: rotate(310deg);
+      -webkit-transform: rotate(310deg);
+      transform: rotate(310deg);
+  }
+
+  .text-circle p:nth-of-type(141) {
+      -ms-transform: rotate(312.5deg);
+      -webkit-transform: rotate(312.5deg);
+      transform: rotate(312.5deg);
+  }
+
+  .text-circle p:nth-of-type(142) {
+      -ms-transform: rotate(315deg);
+      -webkit-transform: rotate(315deg);
+      transform: rotate(315deg);
+  }
+
+  .text-circle p:nth-of-type(143) {
+      -ms-transform: rotate(317deg);
+      -webkit-transform: rotate(317deg);
+      transform: rotate(317deg);
+  }
+
+  .text-circle p:nth-of-type(144) {
+      -ms-transform: rotate(321deg);
+      -webkit-transform: rotate(321deg);
+      transform: rotate(321deg);
+  }
+
+  .text-circle p:nth-of-type(145) {
+      -ms-transform: rotate(323.5deg);
+      -webkit-transform: rotate(323.5deg);
+      transform: rotate(323.5deg);
+  }
+
+  .text-circle p:nth-of-type(146) {
+      -ms-transform: rotate(327deg);
+      -webkit-transform: rotate(327deg);
+      transform: rotate(327deg);
+  }
+
+  .text-circle p:nth-of-type(147) {
+      -ms-transform: rotate(330deg);
+      -webkit-transform: rotate(330deg);
+      transform: rotate(330deg);
+  }
+
+  .text-circle p:nth-of-type(148) {
+      -ms-transform: rotate(332.5deg);
+      -webkit-transform: rotate(332.5deg);
+      transform: rotate(332.5deg);
+  }
+
+  .text-circle p:nth-of-type(149) {
+      -ms-transform: rotate(334.5deg);
+      -webkit-transform: rotate(334.5deg);
+      transform: rotate(334.5deg);
+  }
+
+  .text-circle p:nth-of-type(150) {
+      -ms-transform: rotate(341deg);
+      -webkit-transform: rotate(341deg);
+      transform: rotate(341deg);
+  }
