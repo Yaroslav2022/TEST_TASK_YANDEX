@@ -53,7 +53,7 @@ body {
 .main__content__top__right {}
 
 .main__content__top__background__layer1 {
-    background-image: url(/images/backgroud-layer.png);
+    background-image: url(../images/backgroud-layer.png);
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -413,7 +413,7 @@ body {
 }
 
 .main__content__stages_grid_block {
-    background-image: url(/images/BACKGROUND-Paper.png);
+    background-image: url(../images/BACKGROUND-Paper.png);
     display: flex;
     padding: 20px;
 
@@ -488,13 +488,13 @@ body {
 }
 
 .button_left_arrow {
-    background-image: url(/images/carousel\ button\ left.png);
+    background-image: url(../images/carousel\ button\ left.png);
     background-repeat: no-repeat;
 
 }
 
 .button_left_arrow:hover {
-    background-image: url(/images/carousel_button_right_yellow.png);
+    background-image: url(../images/carousel_button_right_yellow.png);
     background-repeat: no-repeat;
     transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
@@ -504,13 +504,13 @@ body {
 }
 
 .button_right_arrow {
-    background-image: url(/images/carousel\ button\ right.png);
+    background-image: url(../images/carousel\ button\ right.png);
     background-repeat: no-repeat;
 
 }
 
 .button_right_arrow:hover {
-    background-image: url(/images/carousel_button_right_yellow.png);
+    background-image: url(../images/carousel_button_right_yellow.png);
 
 }
 
