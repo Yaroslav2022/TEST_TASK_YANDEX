@@ -191,6 +191,7 @@ body {
 .main__content__top__button--left {
     background-color: #1F1F1F;
     color: white;
+    margin-right: 16px;
 }
 
 .main__content__top__button--left:hover {
@@ -247,10 +248,364 @@ body {
     }
 }
 
+
+/* ==============main__content__invitation======================= */
+.main__content__invitation {
+    margin-top: 80px;
+}
+
+.main__content__invitation_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__content__invitation_top_text {
+    font-family: 'Merriweather', serif;
+    font-weight: 500;
+    color: #313131;
+    font-size: 36px;
+    text-transform: uppercase;
+    line-height: 48px;
+    max-width: 764px;
+
+}
+
+.text-br {
+    display: block;
+}
+
+.text-color {
+    color: #F54932;
+    font-weight: 600;
+}
+
+.main__content__invitation_top_img {
+    width: 394px;
+    height: 250px;
+}
+
+.main__content__invitation_bottom {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__content__invitation_bottom_left {
+    position: relative;
+    width: 494px;
+    height: 557px;
+}
+
+.main__content__invitation_bottom_left-img {
+    position: absolute;
+    top: -35px;
+    left: -30px;
+    width: 100%;
+    height: 110%;
+
+}
+
+.main__content__invitation_bottom_right {
+    max-width: 704px;
+}
+
+.main__content__invitation_bottom_right_title {
+    font-family: 'Merriweather', serif;
+    font-weight: 500;
+    color: #313131;
+    font-size: 36px;
+    text-transform: uppercase;
+    line-height: 48px;
+    max-width: 650px;
+}
+
+.main__content__invitation_bottom_right_table {
+    margin-top: 60px;
+    display: flex;
+    color: #313131;
+    font-size: 20px;
+}
+
+.main__content__invitation_bottom_right_table_item {
+    padding: 16px 16px;
+}
+
+.main__content__invitation_bottom_right_table_left {
+    width: 295px;
+}
+
+.main__content__invitation_bottom_right_table_right {
+    width: 398px;
+    font-weight: 600;
+
+}
+
+.table-line {
+    padding-left: 0px;
+    border-right: 2px solid #D0D0D0;
+}
+
+.table-line-bottom {
+    border-bottom: 2px solid #D0D0D0;
+}
+
+.text-underline {
+    text-decoration: line-through;
+    margin-right: 10px;
+    text-decoration-color: #F54932;
+    -moz-text-decoration-color: #F54932;
+}
+
+.main__content__invitation_bottom_right_bottom_text {
+    margin-top: 48px;
+    font-size: 20px;
+    line-height: 24px;
+    color: red;
+}
+
+.main__content__invitation_bottom_right_bottom_text a {
+    text-decoration: none;
+    color: #3057A2;
+    font-family: 'Golos Text', sans-serif;
+    width: 400px;
+}
+
+/* ====================main__content__stages===================== */
+
+.main__content__stages {
+    margin-top: 200px;
+}
+
+.main__content__stages_top {
+    width: 806px;
+    position: relative;
+}
+
+.main__content__stages_top_title {
+    font-size: 54px;
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+    line-height: 65px;
+    color: #313131;
+}
+
+.main__content__stages_top_subtitle {
+    position: absolute;
+    width: 280px;
+    font-size: 20px;
+    line-height: 22px;
+    color: #3057A2;
+    bottom: 9px;
+    left: 301px;
+}
+
+.main__content__stages_grid {
+    margin-top: 54px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+}
+
+.main__content__stages_grid span {
+    margin-right: 28%;
+}
+
+.main__content__stages_grid_block {
+    background-image: url(/images/BACKGROUND-Paper.png);
+    display: flex;
+    padding: 20px;
+
+}
+
+.main__content__stages_grid_block_text {
+    min-width: 302px;
+    max-width: 546px;
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #313131;
+}
+
+.main__content__stages_grid_block_num {
+    width: 36px;
+    height: 36px;
+    margin-right: 20px;
+}
+
+.main__content__stages_grid_block_plane_img {
+    position: absolute;
+    right: -79px;
+    bottom: 0px;
+
+}
+
+.grid-item-3 {
+    grid-row-start: span 2;
+}
+
+.grid-item-7 {
+    grid-column-start: span 2;
+}
+
+
+/* ===========================main__content__participant============================= */
+
+.main__content__participant {
+    margin-top: 200px;
+    margin-bottom: 140px;
+}
+
+.main__content__participant_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__content__participant_top_title {
+    font-family: 'Merriweather', serif;
+    font-size: 54px;
+    line-height: 65px;
+    color: #313131;
+    text-transform: uppercase;
+}
+
+.main__content__participant_top_buttons {
+    width: 151px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__content__participant_top_buttons button {
+    width: 44px;
+    height: 44px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.button_left_arrow {
+    background-image: url(/images/carousel\ button\ left.png);
+    background-repeat: no-repeat;
+
+}
+
+.button_left_arrow:hover {
+    background-image: url(/images/carousel_button_right_yellow.png);
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+}
+
+.button_right_arrow {
+    background-image: url(/images/carousel\ button\ right.png);
+    background-repeat: no-repeat;
+
+}
+
+.button_right_arrow:hover {
+    background-image: url(/images/carousel_button_right_yellow.png);
+
+}
+
+.main__content__participant_carousel {
+    height: 462px;
+    margin-top: 60px;
+    display: flex;
+    max-width: 1222px;
+    position: relative;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.main__content__participant_carousel_item {
+    width: 394px;
+    height: 462px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+
+.main__content__participant_carousel_item:nth-child(1) {
+    left: 0;
+}
+
+.main__content__participant_carousel_item:nth-child(2) {
+    left: 33.3%;
+}
+
+.main__content__participant_carousel_item:nth-child(3) {
+    left: 66.3%;
+}
+
+.main__content__participant_carousel_item:nth-child(4) {
+    left: 99.66%;
+}
+
+.main__content__participant_carousel_item:nth-child(5) {
+    left: 132.99%;
+}
+
+.main__content__participant_carousel_item:nth-child(6) {
+    left: 166.32%;
+}
+
+
+.main__content__participant_carousel_item_name {
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 28px;
+}
+
+.main__content__participant_carousel_item_rank {
+    margin-top: 6px;
+    color: #313131;
+    opacity: .6;
+}
+
+.main__content__participant_carousel_item_btn {
+    width: 113px;
+    height: 35px;
+    margin-top: 20px;
+    border: 1px solid #3057A2;
+    background-color: transparent;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #3057A2;
+    cursor: pointer;
+}
+
 /* ===========================FOOTER============================= */
 
 .footer {
     flex-shrink: 0;
+    height: 150px;
+    background-color: #E9DED4;
+    padding: 40px 72px 72px;
+
+}
+
+.footer__text {
+    font-family: 'Golos Text', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #313131;
+    opacity: 0.8;
 }
 
 
