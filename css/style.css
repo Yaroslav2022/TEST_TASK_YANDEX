@@ -490,8 +490,21 @@ body {
 .button_left_arrow {
     background-image: url(../images/carousel\ button\ left.png);
     background-repeat: no-repeat;
-
 }
+
+.btn-display-none {
+    display: none;
+}
+
+.button_left_arrow_disable {
+    background-image: url(../images/carousel_button_disabled.png);
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+}
+
 
 .button_left_arrow:hover {
     background-image: url(../images/carousel_button_right_yellow.png);
@@ -513,6 +526,9 @@ body {
     background-image: url(../images/carousel_button_right_yellow.png);
 
 }
+
+
+
 
 .main__content__participant_carousel {
     height: 462px;
@@ -589,9 +605,15 @@ body {
     cursor: pointer;
 }
 
+.main__content__participant_carousel_item_btn:hover {
+    background-color: #3057A2;
+    color: #FFF;
+}
+
 /* ===========================FOOTER============================= */
 
 .footer {
+    width: 100%;
     flex-shrink: 0;
     height: 150px;
     background-color: #E9DED4;
@@ -606,7 +628,12 @@ body {
     line-height: 19px;
     color: #313131;
     opacity: 0.8;
+    max-width: 100%;
 }
 
 
 @media (min-width: 1920px) {}
+
+#num_carousel {
+    color: red;
+}
