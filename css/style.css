@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    width: 1222px;
+    max-width: 1222px;
     margin: 0 auto;
     position: relative;
     padding: 0px 15px;
@@ -32,7 +32,6 @@ body {
 
 .main {
     flex-grow: 1;
-    overflow: hidden;
     position: relative;
 }
 
@@ -48,6 +47,7 @@ body {
 
 .main__content__top__info__left {
     min-width: 542px;
+    margin-right: 650px;
 }
 
 .main__content__top__right {}
@@ -476,7 +476,16 @@ body {
     width: 151px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+}
+
+.num_between_btn {
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 400;
+    line-height: 19.2;
+    margin: 0px 14px;
+    color: #313131;
+    font-size: 16px;
+
 }
 
 .main__content__participant_top_buttons button {
@@ -505,6 +514,11 @@ body {
     -o-transform: scaleX(-1);
 }
 
+.button_right_arrow_disable {
+    background-image: url(../images/carousel_button_disabled.png);
+
+}
+
 
 .button_left_arrow:hover {
     background-image: url(../images/carousel_button_right_yellow.png);
@@ -522,13 +536,11 @@ body {
 
 }
 
+
 .button_right_arrow:hover {
     background-image: url(../images/carousel_button_right_yellow.png);
 
 }
-
-
-
 
 .main__content__participant_carousel {
     height: 462px;
@@ -610,12 +622,16 @@ body {
     color: #FFF;
 }
 
+#num_carousel_right {
+    color: gray;
+}
+
 /* ===========================FOOTER============================= */
 
 .footer {
     width: 100%;
     flex-shrink: 0;
-    height: 150px;
+    min-height: 150px;
     background-color: #E9DED4;
     padding: 40px 72px 72px;
 
@@ -628,12 +644,7 @@ body {
     line-height: 19px;
     color: #313131;
     opacity: 0.8;
-    max-width: 100%;
 }
 
 
 @media (min-width: 1920px) {}
-
-#num_carousel {
-    color: red;
-}
