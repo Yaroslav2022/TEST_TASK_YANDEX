@@ -10,13 +10,14 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .container {
     max-width: 1222px;
     margin: 0 auto;
     position: relative;
-    padding: 0px 15px;
+    padding: 0px 20px;
 }
 
 /* ===========================HEADER============================= */
@@ -44,13 +45,9 @@ body {
     justify-content: center;
 }
 
-
-.main__content__top__info__left {
-    min-width: 542px;
-    margin-right: 650px;
+.main__content__top_wrapper {
+    display: flex;
 }
-
-.main__content__top__right {}
 
 .main__content__top__background__layer1 {
     background-image: url(../images/backgroud-layer.png);
@@ -67,7 +64,6 @@ body {
     position: absolute;
     bottom: 0;
     min-width: 1623.5px;
-    background-position: center center;
 }
 
 .main__content__top__background__horse {
@@ -268,6 +264,7 @@ body {
     text-transform: uppercase;
     line-height: 48px;
     max-width: 764px;
+    padding-right: 10px;
 
 }
 
@@ -282,7 +279,7 @@ body {
 
 .main__content__invitation_top_img {
     width: 394px;
-    height: 250px;
+
 }
 
 .main__content__invitation_bottom {
@@ -293,7 +290,7 @@ body {
 
 .main__content__invitation_bottom_left {
     position: relative;
-    width: 494px;
+    min-width: 494px;
     height: 557px;
 }
 
@@ -301,7 +298,7 @@ body {
     position: absolute;
     top: -35px;
     left: -30px;
-    width: 100%;
+    min-width: 100%;
     height: 110%;
 
 }
@@ -338,7 +335,6 @@ body {
 .main__content__invitation_bottom_right_table_right {
     width: 398px;
     font-weight: 600;
-
 }
 
 .table-line {
@@ -437,7 +433,7 @@ body {
 
 .main__content__stages_grid_block_plane_img {
     position: absolute;
-    right: -79px;
+    right: -45px;
     bottom: 0px;
 
 }
@@ -646,5 +642,478 @@ body {
     opacity: 0.8;
 }
 
+/* =========================================1250========================================== */
 
-@media (min-width: 1920px) {}
+
+@media (max-width: 1250px) {
+    .main__content__top__background__layer2 {
+        min-width: 1400px;
+    }
+
+    .main__content__top__info {
+        width: 450px;
+    }
+
+
+    .main__content__top_title {
+        margin-top: 30px;
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .text_space--one {
+        margin-left: 65px;
+    }
+
+    .text_space--two {
+        margin-left: 25px;
+    }
+
+    .text_space--three {
+        margin-right: 20%;
+    }
+
+    .circle {
+        width: 600px;
+        top: 20px;
+        left: 37px;
+        height: 600px;
+        font-size: 14px;
+    }
+
+    .main__content__top__button {
+        padding: 0px 30px;
+    }
+
+    .main__content__invitation_bottom_right_table {
+        margin-top: 40px;
+    }
+
+    .main__content__invitation_bottom_right_table_right {
+        width: 300px;
+
+    }
+
+}
+
+/* =========================================1140========================================== */
+
+
+@media (max-width: 1140px) {
+    .main__content__top__background__layer2 {
+        min-width: 1400px;
+    }
+
+    .main__content__top__info {
+        width: 400px;
+    }
+
+
+    .main__content__top_title {
+        max-width: 350px;
+        margin-top: 30px;
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .text_space--one {
+        margin-left: 55px;
+    }
+
+    .text_space--two {
+        margin-left: 20px;
+    }
+
+    .main__content__top__buttons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main__content__top__button {
+        width: 100%;
+        margin-right: 0;
+
+    }
+
+    .main__content__top__button--left {
+        margin-bottom: 10px;
+    }
+
+    .circle {
+        top: 20px;
+        left: 63px;
+    }
+
+    .main__content__invitation_bottom_left {
+        position: relative;
+        min-width: 400px;
+        height: 500px;
+
+    }
+
+    .main__content__invitation_top_text {
+        max-width: 650px;
+        font-size: 30px;
+        line-height: 44px;
+    }
+
+    .main__content__invitation_bottom_right_title {
+        max-width: 650px;
+        font-size: 30px;
+        line-height: 44px;
+    }
+
+
+}
+
+/* =========================================1060========================================== */
+@media (max-width: 1060px) {
+    .main__content__top {
+        height: 550px;
+    }
+
+    .main__content__top__info {
+        padding-top: 100px;
+        width: 300px;
+    }
+
+    .main__content__top__text {
+        margin-top: 15px;
+    }
+
+    .main__content__top__background__layer2 {
+        min-width: 1200px;
+    }
+
+
+    .main__content__top_title {
+        margin-top: 0px;
+        font-size: 36px;
+        line-height: 34px;
+    }
+
+    .text_space--one {
+        margin-left: 55px;
+    }
+
+    .text_space--two {
+        margin-left: 10px;
+    }
+
+    .main__content__top__buttons {
+        margin-top: 15px;
+    }
+
+    .main__content__top__button {
+        height: 60px;
+        padding: 0px 20px;
+
+    }
+
+    .main__content__top__button--left {
+        margin-bottom: 14px;
+    }
+
+    .circle {
+        width: 500px;
+        top: 0px;
+        left: 87px;
+        height: 500px;
+        font-size: 11px;
+    }
+
+    .main__content__top__background__king_figure {
+        bottom: 55px;
+        width: 120px;
+        left: 20px;
+    }
+
+    .main__content__top__background__chess_figure {
+        width: 120px;
+        bottom: 130px;
+        right: 105px;
+    }
+
+    .main__content__top__background__horse {
+        bottom: 0;
+        right: 22.5%;
+        width: 120px;
+    }
+
+    .main__content__top__background__pechka_figure {
+        width: 70px;
+        z-index: 5;
+        bottom: 17px;
+        right: -5.5%;
+
+    }
+
+    .main__content__invitation_bottom_right_table_right {
+        width: 270px;
+    }
+
+
+}
+
+/* =========================================1010========================================== */
+@media (max-width: 1010px) {
+    .main__content__invitation_top {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .main__content__invitation_top_img {
+        display: none;
+    }
+
+    .image__between-text {
+        background-image: url(../images/ellips_photo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: block;
+        width: 100%;
+        height: 400px;
+        margin: 34px 0px;
+
+    }
+
+    .main__content__invitation_bottom {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .main__content__invitation_bottom_right {
+        margin-top: 34px;
+        display: flex;
+        flex-direction: column;
+        max-width: 570px;
+    }
+
+}
+
+/* =========================================870========================================== */
+@media (max-width: 870px) {
+    .main__content__top {
+        height: 830px;
+    }
+
+    .main__content__top_wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main__content__top__text {
+        text-align: left;
+        width: 335px;
+    }
+
+    .br--span {
+        margin-right: 20%;
+    }
+
+    .main__content__top__background__layer2 {
+        margin-left: -300px;
+    }
+
+    .main__content__top__info {
+        width: 100%;
+    }
+
+    .main__content__top__button--right {
+        background-color: #fff;
+        opacity: 90%;
+        border: 1px solid #ffffffe8;
+    }
+
+    .main__content__top__button--right:hover {
+        opacity: 100%;
+    }
+
+    .circle {
+        width: 400px;
+        top: -100px;
+        left: 45px;
+        height: 400px;
+        font-size: 9px;
+    }
+
+    .main__content__top__background__king_figure {
+        bottom: 88px;
+        width: 80px;
+        left: 30px;
+    }
+
+    .main__content__top__background__chess_figure {
+        width: 80px;
+        bottom: 155px;
+        right: 55px;
+    }
+
+    .main__content__top__background__horse {
+        bottom: 0;
+        right: 22.5%;
+        width: 120px;
+    }
+
+    .main__content__top__background__pechka_figure {
+        display: none;
+    }
+
+    .marquee {
+        height: 38px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+}
+
+/* =========================================710========================================== */
+
+@media (max-width: 710px) {
+    .image__between-text {
+        display: flex;
+        justify-content: center;
+        height: 400px;
+
+    }
+
+}
+
+/* =========================================650========================================== */
+
+@media (max-width: 650px) {
+    .image__between-text {
+        margin-bottom: -30px;
+    }
+
+}
+
+.main__content__invitation_top_text {
+    text-align: left;
+}
+
+/* =========================================600========================================== */
+
+@media (max-width: 600px) {
+    .image__between-text {
+        margin-top: 20px;
+        margin-bottom: -60px;
+    }
+
+}
+
+
+
+
+/* =========================================450========================================== */
+@media (max-width: 450px) {
+    .main__content__top {
+        height: 792px;
+    }
+
+    .main__content__top__text {
+        text-align: left;
+        width: 100%;
+    }
+
+
+    .main__content__top__info {
+        min-width: 313px;
+        padding-top: 95px;
+    }
+
+    .logo {
+        padding-left: 10px;
+        width: 213px;
+        height: 32px;
+    }
+
+    .main__content__top_title {
+
+        padding-left: 10px;
+        width: 100%;
+    }
+
+    .main__content__top__text {
+        margin-top: 24px;
+        padding-left: 10px;
+
+    }
+
+    .main__content__top__buttons {
+        margin-top: 32px;
+    }
+
+
+    .main__content__top__background__layer2 {
+        margin-left: -320px;
+        min-width: 985px;
+    }
+
+    .main__content__top__button {
+        height: 47px;
+    }
+
+    .circle {
+        width: 325px;
+        top: -60px;
+        left: -3px;
+        height: 325px;
+        font-size: 9px;
+    }
+
+    .main__content__top__background__king_figure {
+        bottom: 50px;
+        width: 60px;
+        left: 35px;
+    }
+
+    .main__content__top__background__chess_figure {
+        width: 60px;
+        bottom: 118px;
+        right: 45px;
+    }
+
+}
+
+/* =========================================400========================================== */
+@media (max-width: 400px) {
+    .main__content__top {
+        height: 720px;
+    }
+
+    .main__content__top__background__layer2 {
+        margin-left: -285px;
+        height: 210px;
+        min-width: 860px;
+    }
+
+    .circle {
+        width: 280px;
+        top: -75px;
+        height: 280px;
+        font-size: 6px;
+    }
+
+    .main__content__top__background__king_figure {
+        bottom: 42px;
+        width: 50px;
+        left: 34px;
+    }
+
+    .main__content__top__background__chess_figure {
+        width: 50px;
+        bottom: 95px;
+        right: 38px;
+    }
+
+    .main__content__top__background__horse {
+        width: 85px;
+        left: 40%;
+    }
+
+}
