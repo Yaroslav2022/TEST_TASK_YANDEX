@@ -85,25 +85,11 @@ centerDots.addEventListener('click', () => {
 });
 
 
-// leftBtn.style.display = 'none'
 
-
-// const leftBtnCarousel = document.querySelector('.button_left_arrow');
-// const rightBtnCarousel = document.querySelector('.button_right_arrow');
-// const carouselArea = document.querySelector('.main__content__participant_carousel');
-// const carouselLeft = document.querySelector('.main__content__participant_carousel_left');
-// const carouselRight = document.querySelector('.main__content__participant_carousel_right');
-
-// rightBtnCarousel.addEventListener('click', () => {
-//     carouselLeft.style.transform = 'translateX(-100%)';
-//     carouselRight.style.transform = 'translateX(-100%)';
-// })
-// leftBtnCarousel.addEventListener('click', () => {
-//     carouselLeft.style.transform = 'translateX(0%)';
-//     carouselRight.style.transform = 'translateX(0%)';
-// })
 
 let ofset = 0;
+let ofsetPad = 0;
+let ofsetMobile = 0;
 
 // ====================================DESCTOP=======================================
 
@@ -139,23 +125,23 @@ const sliderLinePad = document.querySelector('.main__content__participant_carous
 
 
 document.querySelector('.button_right_arrow_pad').addEventListener('click', () => {
-    ofset += 394;
-    if (ofset > 1576) {
-        ofset = 0
+    ofsetPad += 394;
+    if (ofsetPad > 1576) {
+        ofsetPad = 0
         numSlidePad.innerText = 1
     }
-    sliderLinePad.style.left = -ofset + "px"
+    sliderLinePad.style.left = -ofsetPad + "px"
     numSlidePad.innerText = +numSlidePad.innerText + 1;
 
 });
 document.querySelector('.button_left_arrow_pad').addEventListener('click', () => {
-    ofset -= 394;
-    if (ofset < 0) {
-        ofset = 1576
+    ofsetPad -= 394;
+    if (ofsetPad < 0) {
+        ofsetPad = 1576
         numSlidePad.innerText = 7
 
     }
-    sliderLinePad.style.left = -ofset + "px";
+    sliderLinePad.style.left = -ofsetPad + "px";
     numSlidePad.innerText = +numSlidePad.innerText - 1;
 });
 
@@ -165,22 +151,95 @@ const sliderLineMobile = document.querySelector('.main__content__participant_car
 
 
 document.querySelector('.button_right_arrow_mobile').addEventListener('click', () => {
-    ofset += 335;
-    if (ofset > 1675) {
-        ofset = 0
+    ofsetMobile += 300;
+    if (ofsetMobile > 1500) {
+        ofsetMobile = 0
         numSlideMobile.innerText = 0
     }
-    sliderLineMobile.style.left = -ofset + "px"
+    sliderLineMobile.style.left = -ofsetMobile + "px"
     numSlideMobile.innerText = +numSlideMobile.innerText + 1;
 
 });
 document.querySelector('.button_left_arrow_mobile').addEventListener('click', () => {
-    ofset -= 335;
-    if (ofset < 0) {
-        ofset = 1675
+    ofsetMobile -= 300;
+    if (ofsetMobile < 0) {
+        ofsetMobile = 1500
         numSlideMobile.innerText = 7
 
     }
-    sliderLineMobile.style.left = -ofset + "px";
+    sliderLineMobile.style.left = -ofsetMobile + "px";
     numSlideMobile.innerText = +numSlideMobile.innerText - 1;
 });
+
+
+
+
+function showSlide() {
+    ofset += 394;
+    if (ofset > 1182) {
+        ofset = 0
+        numSlide.innerText = 2
+    }
+    sliderLine.style.left = -ofset + "px"
+    numSlide.innerText = +numSlide.innerText + 1;
+}
+
+
+function showSlidePad() {
+    ofsetPad += 394;
+    if (ofsetPad > 1576) {
+        ofsetPad = 0
+        numSlidePad.innerText = 1
+    }
+    sliderLinePad.style.left = -ofsetPad + "px"
+    numSlidePad.innerText = +numSlidePad.innerText + 1;
+}
+function showSlideMobile() {
+    ofsetMobile += 300;
+    if (ofsetMobile > 1500) {
+        ofsetMobile = 0
+        numSlideMobile.innerText = 0
+    }
+    sliderLineMobile.style.left = -ofsetMobile + "px"
+    numSlideMobile.innerText = +numSlideMobile.innerText + 1;
+}
+
+
+
+
+let second = 1000 * 4;
+let TimerImage = setInterval(() => showSlide(), second);
+
+let blockSlider = document.querySelector('.main__content__participant_carousel')
+blockSlider.addEventListener('mouseover', () => {
+    clearInterval(TimerImage)
+})
+
+blockSlider.addEventListener('mouseleave', () => {
+    TimerImage = setInterval(() => showSlide(), second)
+})
+
+
+let TimerImagePad = setInterval(() => showSlidePad(), second);
+
+let blockSliderPad = document.querySelector('.main__content__participant_carousel_pad')
+blockSliderPad.addEventListener('mouseover', () => {
+    clearInterval(TimerImagePad)
+})
+
+blockSliderPad.addEventListener('mouseleave', () => {
+    TimerImagePad = setInterval(() => showSlidePad(), second)
+})
+
+
+
+let TimerImageMobile = setInterval(() => showSlideMobile(), second);
+
+let blockSliderMobile = document.querySelector('.main__content__participant_carousel_mobile')
+blockSliderMobile.addEventListener('mouseover', () => {
+    clearInterval(TimerImageMobile)
+})
+
+blockSliderMobile.addEventListener('mouseleave', () => {
+    TimerImageMobile = setInterval(() => showSlideMobile(), second)
+})
